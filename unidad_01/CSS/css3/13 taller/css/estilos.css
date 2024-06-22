@@ -51,6 +51,7 @@
     display: flex;
     justify-content: space-between;
     width: 60%; 
+    border: 1px solid black;
 }
 
 .cuadrado {
@@ -60,20 +61,26 @@
     justify-content: center;
     align-items: center;
     color: rgb(240, 239, 239);
-    font-size: 30px;
+    font-size: 20px;
     border: 1px solid black;
 }
 
 .cuadrado.gris {
     background-color: rgb(51, 51, 51);
+    border: 1px solid black;
+
 }
 
 .cuadrado.azul {
     background-color: rgb(32, 32, 202);
+    border: 1px solid black;
+
 }
 
 .cuadrado.rosa {
     background-color: rgb(156, 20, 127);
+    border: 1px solid black;
+
     /*color: black;*/ 
 }
 
