@@ -11,9 +11,9 @@
 }
 
 .item {
-    background-color: dodgerblue;
+    background-color: rgb(107, 119, 131);
     padding: 10px;
-    border: 1px solid lightgray;
+    border: 1px solid rgb(175, 172, 172);
 }
 
 .header {
