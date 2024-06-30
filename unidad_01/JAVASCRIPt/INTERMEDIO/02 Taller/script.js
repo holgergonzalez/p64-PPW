@@ -1,28 +1,46 @@
-const URL = "http://www.ups.edu.ec"
-var texto = "Programacion y Plataformas Web"
+// Tipado dinamico
+var a = 100
+console.log( a )
 
-function imprimir_01() {
-    let texto2 = "Avengers"
-    // Esto no se debe hacer.
-    var texto3 = "Liga de la Justicia"
+a = 10.9
+console.log( a )
 
-    console.log( texto )
-    console.log( texto2 )
-    console.log( texto3 )
+a = 'Hola mundo'
+console.log( a )
 
-    // No se puede cambiar a una constante.
-    URL = "http://www.ups.edu.ec/home"
+a = true
+console.log( a )
 
-    console.log(URL)
+// Tipos de datos
+var a = 10
+var b = 10.5
+
+console.log( typeof a )
+console.log( typeof b )
+
+var c = true
+console.log( typeof c )
+
+var d = 'Hola mundo'
+console.log( typeof d )
+
+var e
+console.log( typeof e )
+
+var f = null
+console.log( typeof f )
+console.log( f )
+
+// Objetos
+
+var persona = {
+    nombre: 'Melanie',
+    apellido: 'Saltos',
+    ciudad: 'Guayaquil'
 }
 
-function imprimir_02() {
-    console.log( texto )
-    // texto2 no existe en esta funcion.
-    console.log( texto2 )
-    // texto3 no existe en esta funcion.
-    console.log( texto3 )
-}
+console.log( typeof persona )
+console.log( persona )
 
-imprimir_01()
-imprimir_02()
+persona.nombre = 'Melanie Solange'
+console.log( persona )
