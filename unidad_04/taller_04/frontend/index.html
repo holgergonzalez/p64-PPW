@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gestión de Usuarios</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <h1>Gestión de Usuarios</h1>
+
+        <form id="insertar-usuario">
+            <h2>Insertar Usuario</h2>
+            <input type="text" id="usuario" placeholder="Usuario" required>
+            <input type="password" id="clave" placeholder="Clave" required>
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="text" id="apellido" placeholder="Apellido" required>
+            <input type="date" id="fecha_nacimiento" placeholder="Fecha de Nacimiento" required>
+            <button type="submit">Insertar</button>
+        </form>
+
+        <form id="obtener-usuario">
+            <h2>Obtener Usuario</h2>
+            <input type="text" id="buscar-usuario" placeholder="Usuario">
+            <button type="submit">Obtener</button>
+        </form>
+
+        <form id="actualizar-usuario">
+            <h2>Actualizar Usuario</h2>
+            <input type="text" id="usuario-update" placeholder="Usuario" required>
+            <input type="password" id="clave-update" placeholder="Clave" required>
+            <input type="text" id="nombre-update" placeholder="Nombre" required>
+            <input type="text" id="apellido-update" placeholder="Apellido" required>
+            <input type="date" id="fecha_nacimiento-update" placeholder="Fecha de Nacimiento" required>
+            <button type="submit">Actualizar</button>
+        </form>
+
+        <form id="eliminar-usuario">
+            <h2>Eliminar Usuario</h2>
+            <input type="text" id="usuario-delete" placeholder="Usuario" required>
+            <button type="submit">Eliminar</button>
+        </form>
+
+        <div id="resultados"></div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

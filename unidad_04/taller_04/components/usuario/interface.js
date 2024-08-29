@@ -12,18 +12,18 @@ routes.post('/', function(req, res) {
 })
 
 routes.get('/', function(req, res) {
-    controller.obtener_usuario( req.body )
+    const usuario = req.query.usuario;
+    controller.obtener_usuario( { usuario })
         .then( (data) => response.success(req, res, data, 201) )
         .catch( (error) => response.error(req, res, error, 400) )
 })
 
-routes.put('/', function(req, res){
+routes.put('/', function(req, res) {
     controller.actualizar_usuario( req.body )
         .then( (data) => response.success(req, res, data, 201) )
         .catch( (error) => response.error(req, res, error, 400) )
 })
-
-routes.delete('/', function(req, res){
+routes.delete('/', function(req, res) {
     controller.eliminar_usuario( req.body )
         .then( (data) => response.success(req, res, data, 201) )
         .catch( (error) => response.error(req, res, error, 400) )

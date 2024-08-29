@@ -11,7 +11,6 @@ async function obtener_usuario(dato) {
      if (dato.usuario != null) {
         mi_filtro = { usuario: dato.usuario }
      }
-
      const resultado = await model.find( mi_filtro )
      return resultado
 }

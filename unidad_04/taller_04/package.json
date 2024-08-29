@@ -5,12 +5,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Guillermo Pizarro",
-  "license": "GPL-3.0",
+  "author": "Sulay Vergara",
+  "license": "ISC",
   "description": "",
   "dependencies": {
     "express": "^4.19.2",
-    "mongoose": "^8.5.2",
-    "taller_04": "file:"
+    "mongoose": "^8.5.2"
   }
 }
